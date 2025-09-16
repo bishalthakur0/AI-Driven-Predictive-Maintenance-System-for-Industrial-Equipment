@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add the project root directory to sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
