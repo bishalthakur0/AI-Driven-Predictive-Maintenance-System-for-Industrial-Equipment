@@ -5,8 +5,8 @@ from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 import streamlit as st
-from src.utils import preprocess_data
-from src.model import train_anomaly_detection_model, predict_anomalies, train_failure_prediction_model, predict_time_to_failure
+from .utils import preprocess_data
+from .model import train_anomaly_detection_model, predict_anomalies, train_failure_prediction_model, predict_time_to_failure
 
 def main():
     st.title("AI-Driven Predictive Maintenance System")
